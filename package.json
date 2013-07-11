@@ -1,0 +1,25 @@
+{
+  "name": "grunt-phpmd",
+  "version": "0.1.0",
+  "description": "Grunt plugin for running PHP Mess Detector.",
+  "main": "tasks/phpmd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alappe/grunt-phpmd.git"
+  },
+  "keywords": [
+    "gruntplugin",
+    "phpmd",
+    "mess-detection",
+    "ci",
+    "continous-integration"
+  ],
+  "author": "Andreas Lappe",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/alappe/grunt-phpmd/issues"
+  }
+}
