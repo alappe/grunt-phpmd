@@ -13,3 +13,4 @@ before_script:
   - php composer.phar composer --version
   - php composer.phar install
   - npm install -g grunt-cli
+  - npm install
