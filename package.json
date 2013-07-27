@@ -4,7 +4,7 @@
   "description": "Grunt plugin for running PHP Mess Detector.",
   "main": "tasks/phpmd.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt"
   },
   "repository": {
     "type": "git",
