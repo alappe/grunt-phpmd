@@ -10,6 +10,6 @@ install:
   - curl -sS https://getcomposer.org/installer | php
 before_script:
   - php --version
-  - composer install
-  - composer --version
+  - php composer.phar composer --version
+  - php composer.phar install
   - npm install -g grunt-cli
