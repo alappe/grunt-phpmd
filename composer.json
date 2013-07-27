@@ -1,0 +1,8 @@
+{
+    "name": "build",
+    "type": "library",
+    "require": {
+        "php": ">=5.3.3",
+        "phpmd/phpmd": ">=1.5.0"
+    }
+}
