@@ -47,9 +47,10 @@ exports.init = (grunt) ->
     cmdOptions = maxBuffer: config.maxBuffer
     exec cmd, cmdOptions, (err, stdout, stderr) ->
       grunt.log.write stdout if stdout
-      if err
-        # As documented on # http://phpmd.org/documentation/index.html#exit-codes
-        grunt.fatal err if err.code isnt 2
+
+      # As documented on # http://phpmd.org/documentation/index.html#exit-codes
+      grunt.fatal stdout if err and err.code isnt 2
+
       done()
 
   exports
