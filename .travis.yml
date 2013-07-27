@@ -5,6 +5,7 @@ node_js:
   - "0.10"
 install:
   - apt-get install php5
+  - curl -sS https://getcomposer.org/installer | php
 before_script:
   - php --version
   - composer install
