@@ -1,12 +1,12 @@
 language:
-  - php
   - node_js
-php:
-  - 5.3
-before_script:
-  - composer install
 node_js:
   - "0.8"
   - "0.10"
+install:
+  - apt-get install php5
 before_script:
+  - php --version
+  - composer install
+  - composer --version
   - npm install -g grunt-cli
