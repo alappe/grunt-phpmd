@@ -9,7 +9,7 @@ class World {
      *
      * @var string
      */
-    private $name = '';
+    private $a = '';
 
     /**
      * Constructor
@@ -17,7 +17,7 @@ class World {
      * @param string $name
      */
     public function __construct($name) {
-        $this->name = $name;
+        $this->a = $name;
     }
 
     /**
@@ -26,7 +26,7 @@ class World {
      * @param string $name
      */
     public function setName($name) {
-        $this->name = $name;
+        $this->a = $name;
     }
 
     /**
@@ -35,6 +35,6 @@ class World {
      * @return string
      */
     public function getName() {
-        return $this->name;
+        return $this->a;
     }
 }
