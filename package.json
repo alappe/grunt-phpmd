@@ -4,7 +4,7 @@
   "description": "Grunt plugin for running PHP Mess Detector.",
   "main": "tasks/phpmd.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,14 @@
     "continous-integration"
   ],
   "author": "Andreas Lappe",
+  "contributors": [{
+    "name": "James Cryer",
+    "email": "chat@jamescryer.com",
+    "url": "http://www.jamescryer.com/"
+  }],
+  "devDependencies": {
+    "grunt": "~0.4.0"
+  },
   "license": "BSD",
   "bugs": {
     "url": "https://github.com/alappe/grunt-phpmd/issues"
