@@ -34,7 +34,7 @@ _This task is a [multi task][] so any targets, files and options should be speci
 phpmd: {
   application: {
 	  dir: 'application'
-	}
+	},
 	options: {
 	  rulesets: 'codesize'
 	}
