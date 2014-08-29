@@ -102,3 +102,9 @@ Type: `Number`
 Default: `200*1024`
 
 Override the maxBuffer-Size of nodejs's exec() function if you expect a long output on stdout.
+
+#### ignoreErrorCode
+Type: `Boolean`
+Default: `false`
+
+Option to ignore error code 2 from phpmd and don't treat it as grunt fatal
