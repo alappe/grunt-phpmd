@@ -51,8 +51,8 @@ exports.init = (grunt) ->
       grunt.log.write stdout if stdout
 
       # As documented on # http://phpmd.org/documentation/index.html#exit-codes
-      grunt.fatal stdout if err and err.code isnt 2 and config.ignoreErrorCode == false
-      grunt.warn stdout if err and err.code isnt 1 and config.ignoreWarningCode == false
+      grunt.fatal stdout if err and err.code is 1 and config.ignoreErrorCode is false
+      grunt.warn stdout if err and err.code is 2 and config.ignoreWarningCode is false
 
       done()
 
