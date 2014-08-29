@@ -9,6 +9,10 @@ module.exports = (grunt) ->
     phpmd:
       test:
         dir: 'test'
+      test_ignore_warning_code:
+        options:
+          ignoreWarningCode: false
+        dir: 'test'
       options:
         bin: 'vendor/bin/phpmd'
 
