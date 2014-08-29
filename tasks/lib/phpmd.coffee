@@ -25,6 +25,7 @@ exports.init = (grunt) ->
     strict: false
     rulesets: 'codesize,unusedcode,naming'
     maxBuffer: 200*1024
+    ignoreErrorCode: false
 
   buildCommand = (dir) ->
     cmd = "#{path.normalize config.bin} #{dir} #{config.reportFormat} #{config.rulesets}"
@@ -49,7 +50,7 @@ exports.init = (grunt) ->
       grunt.log.write stdout if stdout
 
       # As documented on # http://phpmd.org/documentation/index.html#exit-codes
-      grunt.fatal stdout if err and err.code isnt 2
+      grunt.fatal stdout if err and err.code isnt 2 and config.ignoreErrorCode == false
 
       done()
 
