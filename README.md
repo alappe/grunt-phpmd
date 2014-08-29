@@ -108,3 +108,9 @@ Type: `Boolean`
 Default: `false`
 
 Option to ignore error code 2 from phpmd and don't treat it as grunt fatal
+
+#### ignoreWarningCode
+Type: `Boolean`
+Default: `true`
+
+Option to ignore warning code 1 from phpmd and don't treat it as grunt warn
