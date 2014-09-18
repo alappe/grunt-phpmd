@@ -1,6 +1,6 @@
 {
   "name": "grunt-phpmd",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Grunt plugin for running PHP Mess Detector.",
   "main": "tasks/phpmd.js",
   "scripts": {
